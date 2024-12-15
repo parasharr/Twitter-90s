@@ -11,299 +11,408 @@
     <title>Twitter</title>
 </head>
 <body>
-    <section id="logosec">
+
+    <header>
         <div class="logo">
             <img src="logo.png" alt="">
         </div>
         <nav id="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li>Explore</li>
-                <li>Notifications</li>
-                <li>Message</li>
-                <li>Bookmarks</li>
-                <li>Lists</li>
-                <li>Profile</li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="notification.html">Notifications</a></li>
+                <li><a href="message.html">Message</a></li>
+                <li><a href="bookmark.html">Bookmarks</a></li>
+                <li><a href="profile.html">Profile</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
  
-<section id="both">
-    <div id="side1">
-        <section id="twittefiled">
-            <div class="container">
-                <div class="tweet-input-container">
-                    <textarea 
-                        id="tweet-input" 
-                        placeholder="What's happening?"
-                        maxlength="280"
-                    ></textarea>
-                    
-                    <div id="image-preview"></div>
-                    
-                    <div class="tweet-controls">
-                        <div class="tweet-actions">
-                            <input 
-                                type="file" 
-                                id="image-upload" 
-                                accept="image/*" 
-                                style="display: none;"
-                            >
-                            <button class="cam" onclick="document.getElementById('image-upload').click()">
-                                <box-icon id="cam-btn" name='camera'></box-icon>
-                            </button>
-                            <button class="cam">
-                                <box-icon id="cam-btn" name='smile'></box-icon>
-                            </button>
-                            <button class="cam">
-                                <box-icon id="cam-btn" type='solid' name='file-gif'></box-icon>
-                            </button>
-                        </div>
+<div class="container2">
+    <div class="left">
+        <div id="side1">
+            <section id="twittefiled">
+                <div class="container">
+                    <div class="tweet-input-container">
+                        <textarea 
+                            id="tweet-input" 
+                            placeholder="What's happening?"
+                            maxlength="280"
+                        ></textarea>
                         
-                        <div class="tweet-actions">
-                            <span id="char-count" class="character-count">0/280</span>
-                            <button 
-                                id="tweet-button" 
-                                class="tweet-button" 
-                                disabled
-                            >
-                                Tweet
-                            </button>
+                        <div id="image-preview"></div>
+                        
+                        <div class="tweet-controls">
+                            <div class="tweet-actions">
+                                <input 
+                                    type="file" 
+                                    id="image-upload" 
+                                    accept="image/*" 
+                                    style="display: none;"
+                                >
+                                <button class="cam" onclick="document.getElementById('image-upload').click()">
+                                    <box-icon id="cam-btn" name='camera'></box-icon>
+                                </button>
+                                <button class="cam">
+                                    <box-icon id="cam-btn" name='smile'></box-icon>
+                                </button>
+                                <button class="cam">
+                                    <box-icon id="cam-btn" type='solid' name='file-gif'></box-icon>
+                                </button>
+                            </div>
+                            
+                            <div class="tweet-actions">
+                                <span id="char-count" class="character-count">0/280</span>
+                                <button 
+                                    id="tweet-button" 
+                                    class="tweet-button" 
+                                    disabled
+                                >
+                                    Tweet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tweets-container">
+                        
+                    </div>
+                </div>
+            </section>
+        
+            <section id="recent">
+                <h1>Recent Tweets</h1>
+            </section>
+        
+            <section>
+            <div class="card">
+                <div>
+                    <img src="Snapinsta.app_468814265_1226181635161745_4998852143532368314_n_1080.jpg" class="profile-pic">
+                </div>
+                <div>
+                    <div class="card-header">
+                        <div class="user-info">
+                            <h3>Sonny Li</h3>
+                            <p>@sonnynomnom.io</p>
+                        </div>
+                        <span class="timestamp" style="margin-left: 75%;">4 days ago</span>
+                    </div>
+                    <div class="card-body">
+                        <p>We're back with ANOTHER<span class="mention"> Hackathon</span><br> 
+                            <span class="hash">#codedex #minihackathon</span></p>
+                        <img src="Screenshot_20241215-132152.jpg" alt="Roses" class="post-image">
+                    </div>
+                    <div class="card-footer">
+                        <div class="interactions">
+                            <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                            <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                            <span><i id="love1" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                            <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
                         </div>
                     </div>
                 </div>
-                <div id="tweets-container">
-                    
+            </div>
+            <div class="card">
+                <div>
+                    <img src="images (2).jpg" class="profile-pic">
                 </div>
-            </div>
-        </section>
-    
-        <section id="recent">
-            <h1>Recent Tweets</h1>
-        </section>
-    
-        <section>
-        <div class="card">
-            <div>
-                <img src="ani.jpg" class="profile-pic">
-            </div>
-            <div>
-                <div class="card-header">
-                    <div class="user-info">
-                        <h3>Alex Smith</h3>
-                        <p>@SMITHY571</p>
+                <div>
+                    <div class="card-header">
+                        <div class="user-info">
+                            <h3>Guns N' Roses</h3>
+                            <p>@gunsnrosesofficial</p>
+                        </div>
+                        <span class="timestamp">6 June, 1985</span>
                     </div>
-                    <span class="timestamp">25 minutes ago</span>
-                </div>
-                <div class="card-body">
-                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                        <span class="hash">#love #gettingmarried</span></p>
-                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-                </div>
-                <div class="card-footer">
-                    <div class="interactions">
-                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
-                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
-                        <span><i id="love1" class="fa-sharp fa-solid fa-heart"></i> 30</span>
-                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                    <div class="card-body">
+                        <p>First ever tour <span class="mention"> of the West Coast</span><br> 
+                            <span class="hash">#tour #85</span></p>
+                        <img src="rs-102439-004_gnr_1985.png" alt="Roses" class="post-image">
+                    </div>
+                    <div class="card-footer">
+                        <div class="interactions">
+                            <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                            <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                            <span><i id="love2" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                            <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div>
+                    <img src="egirl-goth.gif" class="profile-pic">
+                </div>
+                <div>
+                    <div class="card-header">
+                        <div class="user-info">
+                            <h3>Elie</h3>
+                            <p>@elie571</p>
+                        </div>
+                        <span class="text-timestamp">25 minutes ago</span>
+                    </div>
+                    <div class="card-body">
+                        <p>So much struggle<span class="name"></span><br> 
+                        <span class="hash">#90s #meme</span></p>
+                        <img src="90s-memes.jpg" alt="Roses" class="post-image">
+                    </div>
+                    <div class="card-footer">
+                        <div class="interactions">
+                            <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                            <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                            <span><i id="love3" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                            <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="images.jpg" class="profile-pic">
+                </div>
+                <div>
+                    <div class="card-header">
+                        <div class="user-info">
+                            <h3>Madonna</h3>
+                            <p>@madonnaofficial</p>
+                        </div>
+                        <span class="timestamp" style="margin-left: 70%;">25 February, 1992 </span>
+                    </div>
+                    <div class="card-body">
+                        <p>Won first GRAMMY for <span class="mention">Best Music Video</span><br> 
+                            <span class="hash">#grammy92 #bestmusicvideo</span></p>
+                        <img src="MADONNA MTV VMA 84 GettyImages-2417916_0.jpg" alt="Roses" class="post-image">
+                    </div>
+                    <div class="card-footer">
+                        <div class="interactions">
+                            <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                            <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                            <span><i id="love4" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                            <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="image.png" class="profile-pic">
+                </div>
+                <div>
+                    <div class="card-header">
+                        <div class="user-info">
+                            <h3>NASA</h3>
+                            <p>@nasa</p>
+                        </div>
+                        <span class="timestamp"style="margin-left: 80%;">31 January, 1958</span>
+                    </div>
+                    <div class="card-body">
+                        <p>"Explorer 1" the first successfully launched satellite by the <span class="mention">United States</span><br> 
+                            <span class="hash">#space #nasa</span></p>
+                        <img src="maxresdefault.jpg" alt="Roses" class="post-image">
+                    </div>
+                    <div class="card-footer">
+                        <div class="interactions">
+                            <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                            <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                            <span><i id="love6" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                            <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </section>
         </div>
-        <div class="card">
-            <div>
-                <img src="ani.jpg" class="profile-pic">
-            </div>
-            <div>
-                <div class="card-header">
-                    <div class="user-info">
-                        <h3>Alex Smith</h3>
-                        <p>@SMITHY571</p>
-                    </div>
-                    <span class="timestamp">25 minutes ago</span>
-                </div>
-                <div class="card-body">
-                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                        <span class="hash">#love #gettingmarried</span></p>
-                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-                </div>
-                <div class="card-footer">
-                    <div class="interactions">
-                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
-                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
-                        <span><i id="love2" class="fa-sharp fa-solid fa-heart"></i> 30</span>
-                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div>
-                <img src="ani.jpg" class="profile-pic">
-            </div>
-            <div>
-                <div class="card-header">
-                    <div class="user-info">
-                        <h3>Alex Smith</h3>
-                        <p>@SMITHY571</p>
-                    </div>
-                    <span class="timestamp">25 minutes ago</span>
-                </div>
-                <div class="card-body">
-                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                        <span class="hash">#love #gettingmarried</span></p>
-                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-                </div>
-                <div class="card-footer">
-                    <div class="interactions">
-                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
-                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
-                        <span><i id="love3" class="fa-sharp fa-solid fa-heart"></i> 30</span>
-                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div>
-                <img src="ani.jpg" class="profile-pic">
-            </div>
-            <div>
-                <div class="card-header">
-                    <div class="user-info">
-                        <h3>Alex Smith</h3>
-                        <p>@SMITHY571</p>
-                    </div>
-                    <span class="timestamp">25 minutes ago</span>
-                </div>
-                <div class="card-body">
-                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                        <span class="hash">#love #gettingmarried</span></p>
-                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-                </div>
-                <div class="card-footer">
-                    <div class="interactions">
-                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
-                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
-                        <span><i id="love4" class="fa-sharp fa-solid fa-heart"></i> 30</span>
-                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div>
-                <img src="ani.jpg" class="profile-pic">
-            </div>
-            <div>
-                <div class="card-header">
-                    <div class="user-info">
-                        <h3>Alex Smith</h3>
-                        <p>@SMITHY571</p>
-                    </div>
-                    <span class="timestamp">25 minutes ago</span>
-                </div>
-                <div class="card-body">
-                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                        <span class="hash">#love #gettingmarried</span></p>
-                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-                </div>
-                <div class="card-footer">
-                    <div class="interactions">
-                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
-                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
-                        <span><i id="love5" class="fa-sharp fa-solid fa-heart"></i> 30</span>
-                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div>
-                <img src="ani.jpg" class="profile-pic">
-            </div>
-            <div>
-                <div class="card-header">
-                    <div class="user-info">
-                        <h3>Alex Smith</h3>
-                        <p>@SMITHY571</p>
-                    </div>
-                    <span class="timestamp">25 minutes ago</span>
-                </div>
-                <div class="card-body">
-                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                        <span class="hash">#love #gettingmarried</span></p>
-                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-                </div>
-                <div class="card-footer">
-                    <div class="interactions">
-                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
-                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
-                        <span><i id="love6" class="fa-sharp fa-solid fa-heart"></i> 30</span>
-                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div>
-                <img src="ani.jpg" class="profile-pic">
-            </div>
-            <div>
-                <div class="card-header">
-                    <div class="user-info">
-                        <h3>Alex Smith</h3>
-                        <p>@SMITHY571</p>
-                    </div>
-                    <span class="timestamp">25 minutes ago</span>
-                </div>
-                <div class="card-body">
-                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                        <span class="hash">#love #gettingmarried</span></p>
-                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-                </div>
-                <div class="card-footer">
-                    <div class="interactions">
-                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
-                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
-                        <span><i id="love7" class="fa-sharp fa-solid fa-heart"></i> 30</span>
-                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-         
-        </section>
     </div>
 
-    <div id="side2">
-        <div class="trands">
-            <h3>TRANDS FOR YOU</h3>
-        </div>
-        <div class="counter">
-            <div class="hashtags">
-                <h5>#brakingnews</h5>
-                <p><span>102823</span></p>
-                <h2>people are Tweeting about this</h2>
+
+    <div class="right">
+        <div id="side2">
+            <div class="trands">
+                <h3>TRANDS FOR YOU</h3>
+            </div>
+            <div class="counter">
+                <div class="hashtags">
+                    <h5>#brakingnews</h5>
+                    <p><span>102823</span></p>
+                    <h2>people are Tweeting about this</h2>
+                </div>
+            </div>
+            <div class="counter">
+                <div class="hashtags">
+                    <h5>#love</h5>
+                    <p><span>120332</span></p>
+                    <h2>people are Tweeting about this</h2>
+                </div>
+            </div>
+            <div class="counter">
+                <div class="hashtags">
+                    <h5>#travel</h5>
+                    <p><span>492321</span></p>
+                    <h2>people are Tweeting about this</h2>
+                </div>
+            </div>
+            
+            <div class="follow">
+                <h3>WHO TO FOLLOW</h3>
+            </div>
+
+            <div class="people">
+                <div class="person">
+                    <div class="userpic">
+                        <img src="download.jpg" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Steve Jobs</h4>
+                        <p>@stevejobsofficial</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="images.jpg" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Madona</h4>
+                        <p>@madonaofficial</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="Snapinsta.app_468814265_1226181635161745_4998852143532368314_n_1080.jpg" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Sonny Li</h4>
+                        <p>@sonnynomnom.io</p>
+                        <button ><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="9c2ed470284eb2215604d6ff3ca24ede.png" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Bryan Adams</h4>
+                        <p>@adamsbryanofficial</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="images (1).jpg" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Axl Rose</h4>
+                        <p>@axlroseofficial</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="t-princess-diana-british-vogue-haircut.png" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Princess Diana</h4>
+                        <p>@dianaprincessofficial</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="community">
+                <div class="comm">
+                    <h3>COMMUNITIES</h3>
+                </div>
+
+                <div class="guide">
+                    <p>Please be respectful and kind to everyone, share constructive and relevant contributions, avoid spamming, and respect privacy. Thank you for being part of our community!</p>
+                </div>
+
+                <div class="person">
+                    <div class="userpic">
+                        <img src="flat-illustration-of-90s-label-logo-number-retro-symbol-in-pop-art-style-with-lightning-bolt-and-geometric-design-elements-vector.jpg" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Meme Culture 90s</h4>
+                        <p>@memecult</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="images (6).jpg" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>All about Music</h4>
+                        <p>@music</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="image.png" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>NASA Community</h4>
+                        <p>@nasa</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="3658dfff2c4bb8e5330c6ee6fb5ff193.jpg" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Travel Diary</h4>
+                        <p>@traveldiary</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="images (7).jpg" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Nintendo</h4>
+                        <p>@nontendo</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="images.png" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>PlayStation</h4>
+                        <p>@playstation</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="images (8).jpg" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Tetris</h4>
+                        <p>@gamingcommunity</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="userpic">
+                        <img src="images (1).png" alt="">
+                    </div>
+                    <div class="userid">
+                        <h4>Rockstar Games</h4>
+                        <p>@rockstar</p>
+                        <button><i class="ri-arrow-right-s-fill"></i>FOLLOW<i class="ri-arrow-left-s-fill"></i></button>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="counter">
-            <div class="hashtags">
-                <h5>#love</h5>
-                <p><span>120332</span></p>
-                <h2>people are Tweeting about this</h2>
-            </div>
-        </div>
-        <div class="counter">
-            <div class="hashtags">
-                <h5>#travel</h5>
-                <p><span>492321</span></p>
-                <h2>people are Tweeting about this</h2>
-            </div>
-        </div>
-    </div>
-</section>    
+</div>
+</div>   
     
     
 

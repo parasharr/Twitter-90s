@@ -6,8 +6,11 @@
     padding: 0;
 }
 body{
-    background-color: #47adcc;
+    background-color: #21a7cf;
+    background-image: url("noise-light.png");
 }
+
+
 .logo{
     border: 2px solid #060741;
     background-color: #4fc0e6;
@@ -21,12 +24,6 @@ body{
     height: 90px;
     margin-left: 5%;
 }
-
-#both{
-    display: flex;
-    justify-content: space-evenly;
-}
-
 
 #nav ul{
     display: flex;
@@ -49,6 +46,7 @@ body{
     text-decoration: none;
     color: #fff;
 }
+
 .container {
     margin-top: 30px;
     max-width: 900px;
@@ -194,16 +192,19 @@ body{
     margin-right: 10px;
 }
 
+
 #recent{
     text-decoration: underline;
     color: #fff;
-    padding-top: 20px;
-    height: 90px;
-    margin-left: 35%;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 40%;
     font-family: "Press Start 2P", system-ui;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0);
 }
 
 .card {
+    margin-top: 30px;
     margin-left:7.7%;
     margin-bottom: 20px;
     padding-top: 20px;
@@ -233,6 +234,7 @@ body{
     height: 80px;
     margin-right: 10px;
     margin-left: 10px;
+    box-shadow: 1px 1px 1px 3px rgb(128, 126, 126);
 }
 
 .user-info h3{
@@ -246,6 +248,7 @@ body{
     margin: 0;
     font-size: 13px;
     color: #000;
+    
 }
 
 .card-body {
@@ -258,8 +261,8 @@ body{
 .card-body p {
     margin: 0 0 16px 0;
 }
-.card-body .name{
-    color: yellow;
+.mention{
+    color: blue;
     cursor: pointer;
 }
 .card-body .hash{
@@ -290,7 +293,13 @@ body{
 .timestamp {
     font-size: 13px;
     color: #000;
-    margin-left: 74%;
+    margin-left: 70%;
+    margin-bottom: 25px;
+}
+.text-timestamp{
+    font-size: 13px;
+    color: #000;
+    margin-left: 78%;
     margin-bottom: 25px;
 }
 
@@ -305,7 +314,9 @@ body{
     font-family: "Press Start 2P", system-ui;
 }
 
-#side2 .trands h3{
+#side2 .trands h3,
+#side2 .follow h3,
+#side2 .comm h3{
     margin-top: 30px;
     font-size: 15px;
     margin-right: 50px;
@@ -314,6 +325,14 @@ body{
     background-color: #1100FE;
     color: white;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0);
+}
+
+.follow{
+    margin-top: 71px;
+}
+
+.community{
+    margin-top: 107px;
 }
 
 .counter{
@@ -343,6 +362,245 @@ body{
     margin-top: 12px;
     color: #fff;
     font-weight: 100;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0);
     font-size: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container2{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.person{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.userpic img{
+    height: 90px;
+    width: 90px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 1px 3px rgb(128, 126, 126);
+}
+
+.userid h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.userid p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: 10px;
+    color: #fff;
+}
+
+.userid button{
+    font-family: "Press Start 2P", system-ui;
+    background-color: #FFFE00;
+    padding: 8px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.userid button i{
+    font-size: 20px;
+}
+
+.card2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    background-color: #D7D7D7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    overflow: hidden;
+    background-color: #1100FE;
+    display: flex;
+}
+
+.card-header2{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: #D7D7D7;
+    color: #000;
+    width: 127%;
+    box-shadow: 1px 1px 1px 3px rgb(128, 126, 126);
+}
+.card-body2{
+    padding: 16px;
+    background-color: #fff;
+    width: 127%;
+    box-shadow: 1px 1px 1px 3px rgb(128, 126, 126);
+}
+.card-footer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    border-top: 1px solid #e1e8ed;
+    background-color: #f0f4f8;
+    width: 127%;
+    box-shadow: 1px 1px 1px 3px rgb(128, 126, 126);
+}
+
+.guide{
+    width: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #0026fe;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.7);
+}
+
+.notific{
+    margin-top: 7%;
+    font-family: "Press Start 2P", system-ui;
+    color: #fff;
+    padding: 100px 420px;
+    background-color: #1186a9;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+}
+.notific h2{
+    font-size: 25px;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0);
+}
+
+.pfp{
+    display: flex;
+    margin-top: 80px;
+    margin-right: 40%;
+}
+
+.pfp img{
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+.pfp .two h4{
+    margin-left: 30px;
+    margin-top: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.pfp .two p{
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.edit button{
+   margin-left: 31%;
+   margin-bottom: 90px;
+   padding: 10px 40px;
+   font-family: "Press Start 2P", system-ui;
+   background-color: #FFFE00;
+   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+   cursor: pointer;
+}
+
+.person1 {
+    border: 1px solid ;
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: #d7d7d7;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+
+
+.person1:hover{
+    background-color: #b2b1b1;
+}
+
+.person1:active{
+    background-color: #d7d7d7;
+}
+
+.person1 img{
+    margin-right: 1100px;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+.container3,
+.container4{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+/* Popup styles */ 
+.popup { 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+} 
+.popup-content { 
+    background-color: white; 
+    margin: 15% auto; 
+    padding: 20px; 
+    border: 1px solid #888; 
+    width: 100%; 
+    max-width: 700px; 
+} 
+.close { 
+    color: #aaa; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
+} 
+.close:hover, .close:focus { 
+    color: black; 
+    text-decoration: none; 
+    cursor: pointer; 
+} 
+.chat-box { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    height: 200px; 
+    overflow-y: scroll; 
+    margin-bottom: 10px; 
+} 
+#chat-input { 
+    width: calc(100% - 60px); 
+    padding: 10px; 
+    margin-right: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+} 
+#send-btn { 
+    padding: 10px 20px; 
+    border: none; 
+    background-color: #FFFE00; 
+    color: white; 
+    cursor: pointer; 
+    margin-top: 20px;
+    font-family: "Press Start 2P", system-ui;
+} 
+#send-btn:hover { 
+    background-color: #aeae2b; 
+}
+.popup-content h2{
+    font-family: "Press Start 2P", system-ui;
+    margin-bottom: 20px;
 }
