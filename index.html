@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="twitter.png" type="image/svg+xml">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"/>
     <title>Twitter</title>
 </head>
@@ -26,252 +27,285 @@
             </ul>
         </nav>
     </section>
-        
-
-    <section id="twittefiled">
-        <div class="container">
-            <div class="tweet-input-container">
-                <textarea 
-                    id="tweet-input" 
-                    placeholder="What's happening?"
-                    maxlength="280"
-                ></textarea>
-                
-                <div id="image-preview"></div>
-                
-                <div class="tweet-controls">
-                    <div class="tweet-actions">
-                        <input 
-                            type="file" 
-                            id="image-upload" 
-                            accept="image/*" 
-                            style="display: none;"
-                        >
-                        <button class="cam" onclick="document.getElementById('image-upload').click()">
-                            <box-icon id="cam-btn" name='camera'></box-icon>
-                        </button>
-                        <button class="cam">
-                            <box-icon id="cam-btn" name='smile'></box-icon>
-                        </button>
-                        <button class="cam">
-                            <box-icon id="cam-btn" type='solid' name='file-gif'></box-icon>
-                        </button>
-                    </div>
+ 
+<section id="both">
+    <div id="side1">
+        <section id="twittefiled">
+            <div class="container">
+                <div class="tweet-input-container">
+                    <textarea 
+                        id="tweet-input" 
+                        placeholder="What's happening?"
+                        maxlength="280"
+                    ></textarea>
                     
-                    <div class="tweet-actions">
-                        <span id="char-count" class="character-count">0/280</span>
-                        <button 
-                            id="tweet-button" 
-                            class="tweet-button" 
-                            disabled
-                        >
-                            Tweet
-                        </button>
+                    <div id="image-preview"></div>
+                    
+                    <div class="tweet-controls">
+                        <div class="tweet-actions">
+                            <input 
+                                type="file" 
+                                id="image-upload" 
+                                accept="image/*" 
+                                style="display: none;"
+                            >
+                            <button class="cam" onclick="document.getElementById('image-upload').click()">
+                                <box-icon id="cam-btn" name='camera'></box-icon>
+                            </button>
+                            <button class="cam">
+                                <box-icon id="cam-btn" name='smile'></box-icon>
+                            </button>
+                            <button class="cam">
+                                <box-icon id="cam-btn" type='solid' name='file-gif'></box-icon>
+                            </button>
+                        </div>
+                        
+                        <div class="tweet-actions">
+                            <span id="char-count" class="character-count">0/280</span>
+                            <button 
+                                id="tweet-button" 
+                                class="tweet-button" 
+                                disabled
+                            >
+                                Tweet
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tweets-container">
+                    
+                </div>
+            </div>
+        </section>
+    
+        <section id="recent">
+            <h1>Recent Tweets</h1>
+        </section>
+    
+        <section>
+        <div class="card">
+            <div>
+                <img src="ani.jpg" class="profile-pic">
+            </div>
+            <div>
+                <div class="card-header">
+                    <div class="user-info">
+                        <h3>Alex Smith</h3>
+                        <p>@SMITHY571</p>
+                    </div>
+                    <span class="timestamp">25 minutes ago</span>
+                </div>
+                <div class="card-body">
+                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
+                        <span class="hash">#love #gettingmarried</span></p>
+                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
+                </div>
+                <div class="card-footer">
+                    <div class="interactions">
+                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                        <span><i id="love1" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
                     </div>
                 </div>
             </div>
-            
-            <div id="tweets-container">
-                
+        </div>
+        <div class="card">
+            <div>
+                <img src="ani.jpg" class="profile-pic">
+            </div>
+            <div>
+                <div class="card-header">
+                    <div class="user-info">
+                        <h3>Alex Smith</h3>
+                        <p>@SMITHY571</p>
+                    </div>
+                    <span class="timestamp">25 minutes ago</span>
+                </div>
+                <div class="card-body">
+                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
+                        <span class="hash">#love #gettingmarried</span></p>
+                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
+                </div>
+                <div class="card-footer">
+                    <div class="interactions">
+                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                        <span><i id="love2" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="card">
+            <div>
+                <img src="ani.jpg" class="profile-pic">
+            </div>
+            <div>
+                <div class="card-header">
+                    <div class="user-info">
+                        <h3>Alex Smith</h3>
+                        <p>@SMITHY571</p>
+                    </div>
+                    <span class="timestamp">25 minutes ago</span>
+                </div>
+                <div class="card-body">
+                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
+                        <span class="hash">#love #gettingmarried</span></p>
+                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
+                </div>
+                <div class="card-footer">
+                    <div class="interactions">
+                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                        <span><i id="love3" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <img src="ani.jpg" class="profile-pic">
+            </div>
+            <div>
+                <div class="card-header">
+                    <div class="user-info">
+                        <h3>Alex Smith</h3>
+                        <p>@SMITHY571</p>
+                    </div>
+                    <span class="timestamp">25 minutes ago</span>
+                </div>
+                <div class="card-body">
+                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
+                        <span class="hash">#love #gettingmarried</span></p>
+                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
+                </div>
+                <div class="card-footer">
+                    <div class="interactions">
+                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                        <span><i id="love4" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <img src="ani.jpg" class="profile-pic">
+            </div>
+            <div>
+                <div class="card-header">
+                    <div class="user-info">
+                        <h3>Alex Smith</h3>
+                        <p>@SMITHY571</p>
+                    </div>
+                    <span class="timestamp">25 minutes ago</span>
+                </div>
+                <div class="card-body">
+                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
+                        <span class="hash">#love #gettingmarried</span></p>
+                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
+                </div>
+                <div class="card-footer">
+                    <div class="interactions">
+                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                        <span><i id="love5" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <img src="ani.jpg" class="profile-pic">
+            </div>
+            <div>
+                <div class="card-header">
+                    <div class="user-info">
+                        <h3>Alex Smith</h3>
+                        <p>@SMITHY571</p>
+                    </div>
+                    <span class="timestamp">25 minutes ago</span>
+                </div>
+                <div class="card-body">
+                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
+                        <span class="hash">#love #gettingmarried</span></p>
+                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
+                </div>
+                <div class="card-footer">
+                    <div class="interactions">
+                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                        <span><i id="love6" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <img src="ani.jpg" class="profile-pic">
+            </div>
+            <div>
+                <div class="card-header">
+                    <div class="user-info">
+                        <h3>Alex Smith</h3>
+                        <p>@SMITHY571</p>
+                    </div>
+                    <span class="timestamp">25 minutes ago</span>
+                </div>
+                <div class="card-body">
+                    <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
+                        <span class="hash">#love #gettingmarried</span></p>
+                    <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
+                </div>
+                <div class="card-footer">
+                    <div class="interactions">
+                        <span><i class="fa-sharp fa-regular fa-message"></i>  6</span>
+                        <span><i class="fa-sharp fa-solid fa-retweet"></i> 2</span>
+                        <span><i id="love7" class="fa-sharp fa-solid fa-heart"></i> 30</span>
+                        <span><i id="one" class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+         
+        </section>
+    </div>
 
-    <section id="recent">
-        <img src="Screenshot 2024-12-14 123451.png" alt="">
-    </section>
-
-    <section>
-    <div class="card">
-        <div>
-            <img src="ani.jpg" class="profile-pic">
+    <div id="side2">
+        <div class="trands">
+            <h3>TRANDS FOR YOU</h3>
         </div>
-        <div>
-            <div class="card-header">
-                <div class="user-info">
-                    <h3>Alex Smith</h3>
-                    <p>@SMITHY571</p>
-                </div>
-            </div>
-            <div class="card-body">
-                <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                    <span class="hash">#love #gettingmarried</span></p>
-                <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-            </div>
-            <div class="card-footer">
-                <div class="interactions">
-                    <span><box-icon name='comment' ></box-icon></span>
-                    <span>🔁 2</span>
-                    <span>💬 6</span>
-                </div>
-                <span class="timestamp">25 minutes ago</span>
+        <div class="counter">
+            <div class="hashtags">
+                <h5>#brakingnews</h5>
+                <p><span>102823</span></p>
+                <h2>people are Tweeting about this</h2>
             </div>
         </div>
-        
+        <div class="counter">
+            <div class="hashtags">
+                <h5>#love</h5>
+                <p><span>120332</span></p>
+                <h2>people are Tweeting about this</h2>
+            </div>
+        </div>
+        <div class="counter">
+            <div class="hashtags">
+                <h5>#travel</h5>
+                <p><span>492321</span></p>
+                <h2>people are Tweeting about this</h2>
+            </div>
+        </div>
     </div>
-    <div class="card">
-        <div>
-            <img src="ani.jpg" class="profile-pic">
-        </div>
-        <div>
-            <div class="card-header">
-                <div class="user-info">
-                    <h3>Alex Smith</h3>
-                    <p>@SMITHY571</p>
-                </div>
-            </div>
-            <div class="card-body">
-                <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                    <span class="hash">#love #gettingmarried</span></p>
-                <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-            </div>
-            <div class="card-footer">
-                <div class="interactions">
-                    <span>👍 30</span>
-                    <span>🔁 2</span>
-                    <span>💬 6</span>
-                </div>
-                <span class="timestamp">25 minutes ago</span>
-            </div>
-        </div>
-        
-    </div>
-    <div class="card">
-        <div>
-            <img src="ani.jpg" class="profile-pic">
-        </div>
-        <div>
-            <div class="card-header">
-                <div class="user-info">
-                    <h3>Alex Smith</h3>
-                    <p>@SMITHY571</p>
-                </div>
-            </div>
-            <div class="card-body">
-                <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                    <span class="hash">#love #gettingmarried</span></p>
-                <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-            </div>
-            <div class="card-footer">
-                <div class="interactions">
-                    <span>👍 30</span>
-                    <span>🔁 2</span>
-                    <span>💬 6</span>
-                </div>
-                <span class="timestamp">25 minutes ago</span>
-            </div>
-        </div>
-        
-    </div>
-    <div class="card">
-        <div>
-            <img src="ani.jpg" class="profile-pic">
-        </div>
-        <div>
-            <div class="card-header">
-                <div class="user-info">
-                    <h3>Alex Smith</h3>
-                    <p>@SMITHY571</p>
-                </div>
-            </div>
-            <div class="card-body">
-                <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                    <span class="hash">#love #gettingmarried</span></p>
-                <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-            </div>
-            <div class="card-footer">
-                <div class="interactions">
-                    <span>👍 30</span>
-                    <span>🔁 2</span>
-                    <span>💬 6</span>
-                </div>
-                <span class="timestamp">25 minutes ago</span>
-            </div>
-        </div>
-        
-    </div>
-    <div class="card">
-        <div>
-            <img src="ani.jpg" class="profile-pic">
-        </div>
-        <div>
-            <div class="card-header">
-                <div class="user-info">
-                    <h3>Alex Smith</h3>
-                    <p>@SMITHY571</p>
-                </div>
-            </div>
-            <div class="card-body">
-                <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                    <span class="hash">#love #gettingmarried</span></p>
-                <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-            </div>
-            <div class="card-footer">
-                <div class="interactions">
-                    <span>👍 30</span>
-                    <span>🔁 2</span>
-                    <span>💬 6</span>
-                </div>
-                <span class="timestamp">25 minutes ago</span>
-            </div>
-        </div>
-        
-    </div>
-    <div class="card">
-        <div>
-            <img src="ani.jpg" class="profile-pic">
-        </div>
-        <div>
-            <div class="card-header">
-                <div class="user-info">
-                    <h3>Alex Smith</h3>
-                    <p>@SMITHY571</p>
-                </div>
-            </div>
-            <div class="card-body">
-                <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                    <span class="hash">#love #gettingmarried</span></p>
-                <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-            </div>
-            <div class="card-footer">
-                <div class="interactions">
-                    <span>👍 30</span>
-                    <span>🔁 2</span>
-                    <span>💬 6</span>
-                </div>
-                <span class="timestamp">25 minutes ago</span>
-            </div>
-        </div>
-        
-    </div>
-    <div class="card">
-        <div>
-            <img src="ani.jpg" class="profile-pic">
-        </div>
-        <div>
-            <div class="card-header">
-                <div class="user-info">
-                    <h3>Alex Smith</h3>
-                    <p>@SMITHY571</p>
-                </div>
-            </div>
-            <div class="card-body">
-                <p>Got engageeeed!!!!!!!! to <span class="name">@ruby543</span><br> 
-                    <span class="hash">#love #gettingmarried</span></p>
-                <img src="wisconsin_rapids_wedding_photographer__0011.jpg" alt="Roses" class="post-image">
-            </div>
-            <div class="card-footer">
-                <div class="interactions">
-                    <span>👍 30</span>
-                    <span>🔁 2</span>
-                    <span>💬 6</span>
-                </div>
-                <span class="timestamp">25 minutes ago</span>
-            </div>
-        </div>
-        
-    </div>
-    </section>
+</section>    
+    
+    
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

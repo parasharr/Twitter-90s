@@ -5,6 +5,42 @@ const tweetButton = document.getElementById('tweet-button');
 const imageUpload = document.getElementById('image-upload');
 const imagePreview = document.getElementById('image-preview');
 const tweetsContainer = document.getElementById('tweets-container');
+const like1 = document.getElementById('love1')
+const like2 = document.getElementById('love2')
+const like3 = document.getElementById('love3')
+const like4 = document.getElementById('love4')
+const like5 = document.getElementById('love5')
+const like6 = document.getElementById('love6')
+const like7 = document.getElementById('love7')
+
+like1.addEventListener("click", function(){
+    like1.style.color = "#FE1D0B"
+    like1.style.webkitTextStroke = `2px #000`
+})
+like2.addEventListener("click", function(){
+    like2.style.color = "#FE1D0B"
+    like2.style.webkitTextStroke = `2px #000`
+})
+like3.addEventListener("click", function(){
+    like3.style.color = "#FE1D0B"
+    like3.style.webkitTextStroke = `2px #000`
+})
+like4.addEventListener("click", function(){
+    like4.style.color = "#FE1D0B"
+    like4.style.webkitTextStroke = `2px #000`
+})
+like5.addEventListener("click", function(){
+    like5.style.color = "#FE1D0B"
+    like5.style.webkitTextStroke = `2px #000`
+})
+like6.addEventListener("click", function(){
+    like6.style.color = "#FE1D0B"
+    like6.style.webkitTextStroke = `2px #000`
+})
+like7.addEventListener("click", function(){
+    like7.style.color = "#FE1D0B"
+    like7.style.webkitTextStroke = `2px #000`
+})
 
 // State
 let selectedImage = null;
@@ -54,6 +90,8 @@ function postTweet() {
         
         // Construct tweet content
         tweetElement.innerHTML = `
+            ${tweetText ? `<div class="name">Chris Norman</div>` : ''}
+            ${tweetText ? `<div class="username">@CHRIS334</div>` : ''}
             ${tweetText ? `<div class="tweet-content">${tweetText}</div>` : ''}
             ${selectedImage ? `<img src="${selectedImage}" class="tweet-image">` : ''}
             <div class="tweet-timestamp">${new Date().toLocaleString()}</div>
