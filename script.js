@@ -12,10 +12,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Like buttons event listener
     likes.forEach(like => {
         like.addEventListener("click", function() {
-            like.style.color = "#FE1D0B";
-            like.style.webkitTextStroke = `2px #000`;
+            if (like.classList.contains("liked")) {
+                like.classList.remove("liked");
+                like.style.color = "";
+                like.style.webkitTextStroke = "";
+            } else {
+                like.classList.add("liked");
+                like.style.color = "#FE1D0B";
+                like.style.webkitTextStroke = "2px #000";
+            }
         });
     });
+    
+    
 
     // State
     let selectedImage = null;
