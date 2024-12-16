@@ -22,9 +22,11 @@ Welcome to the repo. This project is about twitter but it's from 90s. a revoluti
 **Posting**:
       1. Use the input box to type your 280-character message.
       2. Click the "Tweet" button to post your message.
+      
 **Interacting with others**:
       1. Click the "Like" button to show appreciation.
       2. (Reply and reshare are under development)
+      
 **Exploring Contents**:
       1. (Joining community and following options are under development)
 
