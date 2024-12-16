@@ -592,7 +592,7 @@ body{
     padding: 10px 20px; 
     border: none; 
     background-color: #FFFE00; 
-    color: white; 
+    color: #000; 
     cursor: pointer; 
     margin-top: 20px;
     font-family: "Press Start 2P", system-ui;
@@ -603,4 +603,31 @@ body{
 .popup-content h2{
     font-family: "Press Start 2P", system-ui;
     margin-bottom: 20px;
+}
+.marquee-container {
+     width: 80%; 
+     margin-left: 10%;
+     overflow: hidden; 
+     padding: 10px;
+} 
+marquee { 
+    font-size: 15px; 
+    padding: 10px;
+    background-color: #0c6985;
+    font-family: "Press Start 2P", system-ui;
+    color: red;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+.info .details{
+    margin-right: 15%;
+    font-family: "Press Start 2P", system-ui;
+    color: #fff;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0);
 }
