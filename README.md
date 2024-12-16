@@ -5,7 +5,9 @@ Welcome to the repo. This project is about twitter but it's from 90s. a revoluti
 
 ## Languages
 **HTML** - For the structure of the page.
+
 **CSS** - For the retro stying.
+
 **JAVASCRIPT** - For user interactions.
 
 ## Features
@@ -31,5 +33,7 @@ We welcome contributions from the community! If you have suggestions, bug report
 
 ## Acknowledgements
 **Font Awesom**
+
 **Google Fonts**
+
 **Box Icon**
