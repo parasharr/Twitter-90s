@@ -3,6 +3,9 @@
 ## Overview
 Welcome to the repo. This project is about twitter but it's from 90s. a revolutionary microblogging platform designed like 1999 to change the way we communicate online. I will bring you to that part of twitter which will give you 90s vibe.
 
+## Live Preview :-
+https://twitter-90s.netlify.app/
+
 ## Languages
 **HTML** - For the structure of the page.
 
